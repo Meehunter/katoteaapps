@@ -1,0 +1,186 @@
+body {
+      margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+            'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+                sans-serif;
+                  background: linear-gradient(135deg, #E8F5E9 0%, #4CAF50 100%); /* Gradasi hijau-putih */
+                    background-image: url('https://www.transparenttextures.com/patterns/digital-circuit.png'); /* Gambar latar belakang */
+                      background-size: cover;
+                        background-repeat: repeat;
+                          background-attachment: fixed;
+                            background-opacity: 0.2; /* Tidak langsung mendukung opacity, akan diatur melalui pseudo-element */
+                              position: relative;
+                              }
+
+                              body::before {
+                                content: '';
+                                  position: fixed;
+                                    top: 0;
+                                      left: 0;
+                                        width: 100%;
+                                          height: 100%;
+                                            background: rgba(255, 255, 255, 0.8); /* Overlay untuk membuat gambar lebih transparan */
+                                              z-index: -1;
+                                              }
+
+                                              .container {
+                                                max-width: 800px;
+                                                  margin: 0 auto;
+                                                    padding: 30px;
+                                                      min-height: 100vh;
+                                                        display: flex;
+                                                          flex-direction: column;
+                                                            justify-content: flex-start;
+                                                            }
+
+                                                            .header {
+                                                              display: flex;
+                                                                align-items: center;
+                                                                  justify-content: center;
+                                                                    gap: 15px;
+                                                                      padding: 20px;
+                                                                        background-color: #FFFFFF;
+                                                                          border-bottom: 1px solid #E0E0E0;
+                                                                            margin-bottom: 30px;
+                                                                            }
+
+                                                                            .header h1 {
+                                                                              color: #2E7D32;
+                                                                                margin: 0;
+                                                                                  font-size: 2rem;
+                                                                                    font-weight: 600;
+                                                                                    }
+                                                                           
+                                                                                 
+                                                                                   
+                                                                                          
+                                                                                    
+
+                                                                                    main {
+                                                                                      background-color: #FFFFFF;
+                                                                                        padding: 30px;
+                                                                                          border-radius: 12px;
+                                                                                            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                                                                                              flex: 1;
+                                                                                              }
+
+                                                                                              .section {
+                                                                                                display: flex;
+                                                                                                  flex-direction: column;
+                                                                                                    gap: 20px;
+                                                                                                    }
+
+                                                                                                    .info-box {
+                                                                                                      background-color: #E8F5E9;
+                                                                                                        padding: 20px;
+                                                                                                          border-radius: 10px;
+                                                                                                            border: 1px solid #C8E6C9;
+                                                                                                            }
+
+                                                                                                            .info-box p {
+                                                                                                              margin: 5px 0;
+                                                                                                                color: #1A1A1A;
+                                                                                                                  font-weight: 500;
+                                                                                                                    font-size: 1.1rem;
+                                                                                                                    }
+
+                                                                                                                    .tab-menu {
+                                                                                                                      display: flex;
+                                                                                                                        justify-content: space-between;
+                                                                                                                          margin-bottom: 20px;
+                                                                                                                          }
+
+                                                                                                                          .tab-button {
+                                                                                                                            flex: 1;
+                                                                                                                              padding: 10px 15px;
+                                                                                                                                border: 1px solid #C8E6C9;
+                                                                                                                                  border-radius: 8px;
+                                                                                                                                    background-color: #F5F5F5;
+                                                                                                                                      color: #2E7D32;
+                                                                                                                                        font-weight: 500;
+                                                                                                                                          cursor: pointer;
+                                                                                                                                            transition: background-color 0.3s;
+                                                                                                                                              margin: 0 5px;
+                                                                                                                                              }
+
+                                                                                                                                              .tab-button.active {
+                                                                                                                                                background-color: #4CAF50;
+                                                                                                                                                  color: #FFFFFF;
+                                                                                                                                                    border-color: #4CAF50;
+                                                                                                                                                    }
+
+                                                                                                                                                    .tab-button:hover {
+                                                                                                                                                      background-color: #E8F5E9;
+                                                                                                                                                      }
+
+                                                                                                                                                      .action-box {
+                                                                                                                                                        background-color: #F5F5F5;
+                                                                                                                                                          padding: 20px;
+                                                                                                                                                            border-radius: 10px;
+                                                                                                                                                              border: 1px solid #E0E0E0;
+                                                                                                                                                              }
+
+                                                                                                                                                              .action-box h2 {
+                                                                                                                                                                color: #2E7D32;
+                                                                                                                                                                  margin: 0 0 15px 0;
+                                                                                                                                                                    font-size: 1.5rem;
+                                                                                                                                                                    }
+
+                                                                                                                                                                    .button {
+                                                                                                                                                                      background-color: #4CAF50;
+                                                                                                                                                                        color: #FFFFFF;
+                                                                                                                                                                          padding: 12px 20px;
+                                                                                                                                                                            border: none;
+                                                                                                                                                                              border-radius: 8px;
+                                                                                                                                                                                cursor: pointer;
+                                                                                                                                                                                  font-size: 1.1rem;
+                                                                                                                                                                                    font-weight: 500;
+                                                                                                                                                                                      transition: background-color 0.3s;
+                                                                                                                                                                                        width: 100%;
+                                                                                                                                                                                        }
+
+                                                                                                                                                                                        .button:hover {
+                                                                                                                                                                                          background-color: #388E3C;
+                                                                                                                                                                                          }
+
+                                                                                                                                                                                          .connect-button {
+                                                                                                                                                                                            display: block;
+                                                                                                                                                                                              margin: 0 auto;
+                                                                                                                                                                                                width: auto;
+                                                                                                                                                                                                  padding: 14px 40px;
+                                                                                                                                                                                                    font-size: 1.2rem;
+                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                    .input {
+                                                                                                                                                                                                      padding: 12px;
+                                                                                                                                                                                                        margin-bottom: 15px;
+                                                                                                                                                                                                          border: 1px solid #C8E6C9;
+                                                                                                                                                                                                            border-radius: 8px;
+                                                                                                                                                                                                              background-color: #FFFFFF;
+                                                                                                                                                                                                                color: #1A1A1A;
+                                                                                                                                                                                                                  width: 100%;
+                                                                                                                                                                                                                    box-sizing: border-box;
+                                                                                                                                                                                                                      font-size: 1.1rem;
+                                                                                                                                                                                                                      }
+
+                                                                                                                                                                                                                      .rate-info {
+                                                                                                                                                                                                                        color: #388E3C;
+                                                                                                                                                                                                                          font-size: 1rem;
+                                                                                                                                                                                                                            margin-top: 5px;
+                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                            .token-select {
+                                                                                                                                                                                                                              display: flex;
+                                                                                                                                                                                                                                justify-content: space-between;
+                                                                                                                                                                                                                                  margin-bottom: 15px;
+                                                                                                                                                                                                                                  }
+
+                                                                                                                                                                                                                                  .token {
+                                                                                                                                                                                                                                    background-color: #E8F5E9;
+                                                                                                                                                                                                                                      padding: 10px 15px;
+                                                                                                                                                                                                                                        border-radius: 8px;
+                                                                                                                                                                                                                                          border: 1px solid #C8E6C9;
+                                                                                                                                                                                                                                            color: #2E7D32;
+                                                                                                                                                                                                                                              font-weight: 500;
+                                                                                                                                                                                                                                              }
+
